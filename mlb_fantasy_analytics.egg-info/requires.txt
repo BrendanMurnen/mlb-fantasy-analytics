@@ -1,0 +1,16 @@
+pybaseball
+pandas
+duckdb
+fantraxapi
+python-dotenv
+numpy
+streamlit
+selenium
+webdriver-manager
+requests
+
+[dev]
+pytest
+black
+flake8
+jupyter

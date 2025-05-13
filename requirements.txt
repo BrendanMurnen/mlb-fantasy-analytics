@@ -1,0 +1,9 @@
+pybaseball
+fantraxapi
+duckdb
+pandas
+numpy
+streamlit
+pytest
+black
+flake8

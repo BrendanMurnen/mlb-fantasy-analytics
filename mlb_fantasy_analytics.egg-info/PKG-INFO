@@ -1,0 +1,102 @@
+Metadata-Version: 2.4
+Name: mlb-fantasy-analytics
+Version: 0.1.0
+Summary: MLB player analysis and fantasy baseball roster optimization
+Home-page: https://github.com/yourusername/mlb-fantasy-analytics
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Sports :: Baseball Analytics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pybaseball
+Requires-Dist: pandas
+Requires-Dist: duckdb
+Requires-Dist: fantraxapi
+Requires-Dist: python-dotenv
+Requires-Dist: numpy
+Requires-Dist: streamlit
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: jupyter; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# MLB Fantasy Analytics
+
+A Python project for statistical analysis of MLB players and fantasy baseball roster optimization.
+
+## Setup
+1. Create virtual environment: `python -m venv venv`
+2. Activate virtual environment: `source venv/bin/activate`
+3. Install dependencies: `pip install -r requirements.txt`
+
+## Project Structure
+```
+mlb-fantasy-analytics/
+│
+├── .env                      # Environment variables (API keys, credentials)
+├── .gitignore               # Git ignore file
+├── README.md                # Project documentation
+├── requirements.txt         # Python dependencies
+├── pyproject.toml          # Project metadata and build configuration
+│
+├── data/                    # Data directory (gitignored)
+│   ├── raw/                # Raw data from pybaseball and fantrax
+│   ├── processed/          # Cleaned and transformed data
+│   └── duckdb/            # DuckDB database files
+│
+├── notebooks/              # Jupyter notebooks for exploration
+│   └── exploration/       # Exploratory analysis notebooks
+│
+├── src/                    # Production code
+│   ├── __init__.py
+│   ├── config/           # Configuration files
+│   │   └── config.py
+│   │
+│   ├── data/             # Data processing modules
+│   │   ├── extraction.py   # Data extraction from APIs
+│   │   ├── transformation.py # Data cleaning and transformation
+│   │   └── loading.py      # Loading data into DuckDB
+│   │
+│   ├── analysis/         # Analysis modules
+│   │   ├── stats.py      # Statistical analysis functions
+│   │   └── optimization.py # Roster optimization logic
+│   │
+│   ├── api/             # API related code
+│   │   ├── pybaseball_client.py
+│   │   └── fantrax_client.py
+│   │
+│   └── visualization/   # Visualization modules
+│       └── plots.py
+│
+├── tests/               # Test directory
+│   ├── __init__.py
+│   ├── test_data.py
+│   └── test_analysis.py
+│
+├── app/                # Frontend application
+│   ├── static/
+│   ├── templates/
+│   └── main.py        # Streamlit/Dash/Flask app
+│
+└── scripts/           # Utility scripts
+    ├── update_data.py
+    └── generate_reports.py
+```
