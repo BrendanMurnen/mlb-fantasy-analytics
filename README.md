@@ -1,6 +1,6 @@
 # MLB Fantasy Analytics
 
-A Python project for statistical analysis of MLB players and fantasy baseball roster optimization.
+A Python project for statistical analysis of MLB players and fantasy baseball roster optimization. Right now it's mostly data cleaning + transformation's from [Fantrax API](https://fantraxapi.metamanager.wiki/en/stable/intro.html) and [Pro Baseball Reference, via PyBaseball](https://github.com/jldbc/pybaseball/tree/master)
 
 ## Setup
 1. Create virtual environment: `python -m venv venv`
